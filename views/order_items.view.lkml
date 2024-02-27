@@ -16,10 +16,8 @@ view: order_items {
     # Here's what a typical dimension looks like in LookML.
     # A dimension is a groupable field that can be used to filter query results.
     # This dimension will be called "Inventory Item ID" in Explore.
-dimension: one {
-  type: date
-  sql: ${TABLE}.one;;
-}
+
+
   dimension: inventory_item_id {
     type: number
     # hidden: yes
