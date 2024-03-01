@@ -126,6 +126,7 @@ explore: orders {
 }
 
 explore: order_items {
+  sql_always_where: ${orders.created_date}created_date} >= '2012-01-01' ;;
   join: orders {
     type: left_outer
     sql_on: ${order_items.order_id} = ${orders.id} ;;
